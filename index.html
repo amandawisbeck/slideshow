@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Easy Vegan Recipes</title>
+	<link rel="shortcut icon" href="plantlogo.png">
+
+	<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="themes/default/default.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="themes/light/light.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="themes/dark/dark.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="themes/bar/bar.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="styles/nivo-slider.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="styles/style.css" type="text/css" media="screen" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+
+</head>
+
+<body>
+	<header>
+		<img src="plantlogo.png" alt="Logo">
+		<h2>Veganism</h2>
+		</header>
+	<h1 style="margin-top:10px;" align="center">Easy Vegan Recipes</h1>
+
+	<div id="wrapper">
+
+		<div class="slider-wrapper theme-default">
+
+			<div id="slider" class="nivoSlider">
+				<img src="images1/chia.jpg" data-thumb="images1/rainbow.png" alt="" title="Banana Coconut Chia Pudding: Chia seeds will clean your colon, helping the process of detoxification and strengthening the body">
+				<img src="images1/delight.jpg" data-thumb="images1/soup.png" alt="" title="White Delight Smoothie: This adaptogenic drink will nourish your body and boost your energy level">
+				<img src="images1/nori.jpg" data-thumb="images1/nori.jpg" alt="" title="Nori Wraps: A delicious and easy dinner, just wrap all your leftovers in a nori sheet">
+				<img src="images1/noodles.jpg" data-thumb="images1/noodles.jpg" alt="" title="Caramelized Veggie Soba Noodles: A crispy nourishing meal packed with vitamins and full of flavor.">
+				<img src="images1/energy.jpg" data-thumb="images/up.jpg" alt="" title="High Energy Balls: The easiest and perfect go-to health snacks to boost your energy">
+			
+				
+
+			</div>
+
+			<div id="htmlcaption4" class="nivo-html-caption">
+				<strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>.
+			</div>
+
+		</div>
+
+	</div>
+	<footer>		
+		<p>&copy; <span id="thisyear"></span> Amanda Wisbeck </p>
+	</footer>
+	<script>
+			var d = new Date();
+			var n = d.getFullYear();
+			document.getElementById("thisyear").innerHTML = n;
+	</script>
+
+	<!----------------- Runs the Slideshow ------------------>
+	<script type="text/javascript">
+		$(window).load(function()
+		{
+			$('#slider').nivoSlider();
+		});
+	</script>
+
+
+</body>
+</html>

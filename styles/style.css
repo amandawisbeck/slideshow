@@ -1,0 +1,152 @@
+/*=================================*/
+/* Nivo Slider Demo
+/* November 2010
+/* By: Gilbert Pellegrom
+/* http://dev7studios.com
+/*=================================*/
+
+/*====================*/
+/*=== Reset Styles ===*/
+/*====================*/
+/* Universal Selector */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  .clearfix::after {
+	content:"";
+	clear:both;
+	display:table;
+  }
+  
+html	{
+	background: linear-gradient( 30deg,#f6bb73, #f6bb73, white,#f6bb73,
+	#f6bb73);
+}
+body {
+	font-size:100%;
+	font-family:Arial, Helvetica, sans-serif;
+	vertical-align:baseline;
+	margin: auto;
+}
+
+header	{
+	clear: both;
+	font-size: 150%;
+	margin: 2%;
+	border-bottom: 2px solid black;
+	padding-bottom: 2em;
+}
+
+header img	{
+		float: left;
+		margin-left: .5em;
+		margin-right: 1.5em;
+		max-width: 5%;
+		min-width: 30px;
+	  }
+
+h1	{
+	font-size: 300%;
+}
+body {
+	line-height:1;
+	color:black;
+	background:white;
+}
+table {
+	border-collapse:separate;
+	border-spacing:0;
+}
+caption, th, td {
+	text-align:left;
+	font-weight:normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content:"";
+}
+blockquote, q {
+	quotes:"" "";
+}
+/* HTML5 tags */
+header, section, footer,
+aside, nav, article, figure {
+	display: block;
+}
+
+/*===================*/
+/*=== Main Styles ===*/
+/*===================*/
+body {
+	font:14px/1.6 Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
+	color:#333;
+	background:seashell;
+	border: 7px black solid;
+	border-radius: 7%;
+	box-shadow: 7px 7px 9px seagreen, -7px -7px 9px seagreen;	
+	max-width: 960px;
+	width: 100%;
+}
+
+a, a:visited {
+	color:blue;
+	text-decoration:none;
+}
+a:hover, a:active {
+	color:#000;
+	text-decoration:none;
+}
+
+#dev7link {
+    position:absolute;
+    top:0;
+    left:50px;
+    background:url(images/dev7logo.png) no-repeat;
+    width:60px;
+    height:67px;
+    border:0;
+    display:block;
+    text-indent:-9999px;
+}
+
+.slider-wrapper { 
+	width: 50%; 
+	margin: 100px auto;
+}
+
+footer	{
+	border-top: 2px solid black;
+	text-align: center;
+	padding: 1em;
+}
+/*====================*/
+/*=== Other Styles ===*/
+/*====================*/
+.clear {
+	clear:both;
+}
+
+@media only screen and (max-width: 767px) {
+	html{
+		background: none;
+	}
+	header img {
+		float: none;
+	}
+	header {
+		text-align: center;
+		font-size: 120%;
+	}
+	body {
+		border: none;
+		border-radius: none;
+		box-shadow: none;
+	}
+	.slider-wrapper { 
+		width: auto; 
+		margin: auto;
+	}
+}
